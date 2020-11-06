@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<style>
+    body {
+        background: #e4e3e3;
+        padding-top: 50px;
+        font-family: "Peddana", serif;
+    }
+
+    form {
+        position: fixed;
+        top: 90px;
+        right: 240px;
+    }
+
+    h1 {
+        position: relative;
+        opacity: 0.4;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    button:hover {}
+
+    }
+
+    .sunday {
+        position: center;
+    }
+    }
+
+    .flavors {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .allbutton {
+        position: absolute;
+        padding: 20px;
+        right: 200px;
+        bottom: 125px;
+    }
+
+    .container {
+        background: #ffffff;
+    }
+
+    .row {
+        background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    }
+
+    .col-2 {}
+</style>
+
+<body>
+    <div class="container">
+        <br />
+        <form class="search-form" id="search-form">
+            <input type="text" placeholder="Enter City" id="city-input" />
+            <input type="submit" value="Search" />
+        </form>
+        <div id="date"></div>
+        <h1>Weekly Forcast in<span id="city"> .....</span></h1>
+        <section class="sunday">
+            <div class="card text-center" style="width: 18rem">
+                <div class="card-body">
+                    <h5 class="card-title">Sunday</h5>
+                    <p class="card-text">
+                        ⛅Partly Sunny with a <br />
+                        High of <span class="tempature" id="tempature"> 85℉</span><br />
+                        low of<span class="tempature">69℉</span>
+                    </p>
+                    <a href="#" class="btn btn-primary">❤</a>
+                </div>
+            </div>
+        </section>
+        <br />
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    Monday<br />🌤Mostly Sunny<br />High 85℉<br />Low 80℉
+                </div>
+                <div class="col-2">
+                    Tuesday<br />🌦Sunny with a chance of Rain<br />High 87℉<br />Low 72℉
+                </div>
+                <div class="col-2">
+                    Wednessday<br />☀Sunny<br />High 90℉<br />Low 88℉
+                </div>
+                <div class="col-2">
+                    Thursday<br />☀Sunny<br />High 93℉<br />Low 89℉
+                </div>
+                <div class="col-2">Friday<br />☀Sunny<br />High 95℉<br />Low 93℉</div>
+                <div class="col-2">
+                    Saturday<br />⛈Storming with Thunder & Lightning<br />High 90℉<br />Low
+                    88℉
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <section class="flavors">
+            <div>percipitation 73%</div>
+            <div>Uv Indext 15%</div>
+            <div>Wind ENE 11mph</div>
+            <div>Feels Like 97℉</div>
+        </section>
+
+        <section class="allbutton">
+            <button>Current Location</button> <br />
+            <button id="fahrenheit">Change to ℉</button><br />
+            <button id="celcius">Change to ℃</button>
+        </section>
+    </div>
+</body>
+<sript src="script.js">
+</sript>
+
+</html>
