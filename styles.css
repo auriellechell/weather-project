@@ -1,0 +1,65 @@
+body {
+        background: #e4e3e3;
+        padding-top: 50px;
+        font-family: "Peddana", serif;
+    }
+
+    form {
+        position: fixed;
+        top: 90px;
+        right: 240px;
+    }
+
+    h1 {
+        position: relative;
+        opacity: 0.4;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .main {
+        position: center;
+    }
+    
+
+    .flavors {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+
+
+    .container {
+        background: #ffffff;
+    }
+
+    .row {
+        background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    }
+
+    .col-2 {}
+
+      .change-b {
+        position: absolute;
+        padding: 20px;
+        right: 200px;
+        bottom: 125px;
+        border-color: #ff9900;
+
+    }
+     .change-b :hover {
+         color: white;
+        background: #007bff;
+        font-weight: 400;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem; 
+        transition: all 200ms ease;
+
+    }
+    .footer{
+        text-align: center;
+        font-style: italic;
+    }
