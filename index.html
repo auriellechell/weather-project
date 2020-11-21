@@ -13,79 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    
 </head>
-<style>
-    body {
-        background: #e4e3e3;
-        padding-top: 50px;
-        font-family: "Peddana", serif;
-    }
-
-    form {
-        position: fixed;
-        top: 90px;
-        right: 240px;
-    }
-
-    h1 {
-        position: relative;
-        opacity: 0.4;
-        font-size: 60px;
-        text-align: center;
-    }
-
-
-
-    }
-
-    .main {
-        position: center;
-    }
-    }
-
-    .flavors {
-        font-size: 20px;
-        padding-top: 20px;
-    }
-
-
-
-    .container {
-        background: #ffffff;
-    }
-
-    .row {
-        background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
-    }
-
-    .col-2 {}
-
-      .change-b {
-        position: absolute;
-        padding: 20px;
-        right: 200px;
-        bottom: 125px;
-        border-color: #ff9900;
-
-    }
-     .change-b :hover {
-         color: white;
-        background: #007bff;
-        font-weight: 400;
-        border: 1px solid transparent;
-        padding: .375rem .75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-        border-radius: .25rem; 
-        transition: all 200ms ease;
-
-    }
-    .footer{
-        text-align: center;
-        font-style: italic;
-    }
-</style>
-
 <body>
     <div class="container">
         <br />
@@ -104,12 +34,18 @@
                         High of <span class="HighMainTempature" id="high-main-tempature">👁‍🗨</span><small>👁‍🗨</small><br />
                         Low of <span class="LowMaintempature" >👁‍🗨</span><small>👁‍🗨</small>
                     </p>
-                    <section class="change-b" id="j-change-b" > <span>
+                    <span><section class="flavors">
+                        <div>percipitation <span>👁‍🗨</span>%</div>
+                        <div>Uv Indext <span>👁‍🗨</span>%</div>
+                        <div>Wind ENE <span>👁‍🗨</span></div>
+                        <div>Feels Like <span>👁‍🗨</span><small>👁‍🗨</small></div>
+                    </section></span>
+                <span><section class="change-b" id="j-change-b">
                         <button id="current-l-b">Current Location</button> <br />
                         <button id="fahrenheit">Change to <small>℉</small></button><br />
                         <button id="celcius">Change to <small>℃</small></button>
-                </span>
-            </section>
+
+                </section></span>
                 </div>
             </div>
         </section>
@@ -137,12 +73,6 @@
         </div>
 
         <br />
-        <section class="flavors">
-            <div>percipitation <span>👁‍🗨</span>%</div>
-            <div>Uv Indext <span>👁‍🗨</span>%</div>
-            <div>Wind ENE <span>👁‍🗨</span></div>
-            <div>Feels Like <span>👁‍🗨</span><small>👁‍🗨</small></div>
-        </section>
 
     </div>
 </body>
