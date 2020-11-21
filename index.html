@@ -34,11 +34,11 @@
         text-align: center;
     }
 
-    button:hover {}
+
 
     }
 
-    .sunday {
+    .main {
         position: center;
     }
     }
@@ -48,12 +48,7 @@
         padding-top: 20px;
     }
 
-    .allbutton {
-        position: absolute;
-        padding: 20px;
-        right: 200px;
-        bottom: 125px;
-    }
+
 
     .container {
         background: #ffffff;
@@ -64,6 +59,31 @@
     }
 
     .col-2 {}
+
+      .change-b {
+        position: absolute;
+        padding: 20px;
+        right: 200px;
+        bottom: 125px;
+        border-color: #ff9900;
+
+    }
+     .change-b :hover {
+         color: white;
+        background: #007bff;
+        font-weight: 400;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem; 
+        transition: all 200ms ease;
+
+    }
+    .footer{
+        text-align: center;
+        font-style: italic;
+    }
 </style>
 
 <body>
@@ -74,17 +94,22 @@
             <input type="submit" value="Search" />
         </form>
         <div id="date"></div>
-        <h1>Weekly Forcast in<span id="city"> .....</span></h1>
-        <section class="sunday">
+        <h1>Weekly Forcast in<span id="city">👁‍🗨</span></h1>
+        <section class="main" id="main-weather">
             <div class="card text-center" style="width: 18rem">
                 <div class="card-body">
-                    <h5 class="card-title">Sunday</h5>
+                    <h5 class="card-title" id="main-day">👁‍🗨</h5>
                     <p class="card-text">
-                        ⛅Partly Sunny with a <br />
-                        High of <span class="tempature" id="tempature"> 85℉</span><br />
-                        low of<span class="tempature">69℉</span>
+                    </br>
+                        High of <span class="HighMainTempature" id="high-main-tempature">👁‍🗨</span><small>👁‍🗨</small><br />
+                        Low of <span class="LowMaintempature" >👁‍🗨</span><small>👁‍🗨</small>
                     </p>
-                    <a href="#" class="btn btn-primary">❤</a>
+                    <section class="change-b" id="j-change-b" > <span>
+                        <button id="current-l-b">Current Location</button> <br />
+                        <button id="fahrenheit">Change to <small>℉</small></button><br />
+                        <button id="celcius">Change to <small>℃</small></button>
+                </span>
+            </section>
                 </div>
             </div>
         </section>
@@ -113,21 +138,16 @@
 
         <br />
         <section class="flavors">
-            <div>percipitation 73%</div>
-            <div>Uv Indext 15%</div>
-            <div>Wind ENE 11mph</div>
-            <div>Feels Like 97℉</div>
+            <div>percipitation <span>👁‍🗨</span>%</div>
+            <div>Uv Indext <span>👁‍🗨</span>%</div>
+            <div>Wind ENE <span>👁‍🗨</span></div>
+            <div>Feels Like <span>👁‍🗨</span><small>👁‍🗨</small></div>
         </section>
 
-        <section class="allbutton">
-            <button>Current Location</button> <br />
-            <button id="fahrenheit">Change to ℉</button><br />
-            <button id="celcius">Change to ℃</button>
-        </section>
     </div>
 </body>
 <sript src="script.js">
 </sript>
-<footer><a href="https://github.com/auriellechell/weather-project/commit/04acc2fb6aa1761a5a50731a4e48bed3b73c1a92" target="_blank">Look at My github</a> </footer>
+<footer class="footer"><small><a href="https://github.com/auriellechell/weather-project/commit/04acc2fb6aa1761a5a50731a4e48bed3b73c1a92" target="_blank">Open Source Code</a> by:Aurielle Collins</small> </footer>
 
 </html>
