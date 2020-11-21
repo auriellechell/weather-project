@@ -5,9 +5,7 @@ body {
     }
 
     form {
-        position: top right;
-        top: 90px;
-        right: 240px;
+       
     }
 
     h1 {
@@ -16,13 +14,41 @@ body {
         font-size: 60px;
         text-align: center;
     }
+    .search-form {
+         position: right;
+         top: 90px;
+         right: 240px;
+
+    }
+    
+    .submit-b :hover {
+        color:black;
+        background: #D4FAF7;
+        font-weight: 400;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem; 
+        transition: all 200ms ease;
+
+
+    }
+    .c-date{
+        position: top right;
+    }
 
     .main {
         position: center;
+        
+    }
+    .card-body{
+         background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
     }
     
 
     .flavors {
+        background: #FDDC93;
         font-size: 20px;
         padding-top: 20px;
     }
@@ -48,8 +74,8 @@ body {
 
     }
      .change-b :hover {
-         color: white;
-        background: #007bff;
+         color:black;
+        background: #D4FAF7;
         font-weight: 400;
         border: 1px solid transparent;
         padding: .375rem .75rem;
