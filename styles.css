@@ -5,7 +5,7 @@ body {
     }
 
     form {
-        position: fixed;
+        position: top right;
         top: 90px;
         right: 240px;
     }
@@ -40,7 +40,7 @@ body {
     .col-2 {}
 
       .change-b {
-        position: absolute;
+        position: right;
         padding: 20px;
         right: 200px;
         bottom: 125px;
