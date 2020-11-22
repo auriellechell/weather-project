@@ -14,8 +14,11 @@ body {
         font-size: 60px;
         text-align: center;
     }
+    .temp-emoji {
+        font-size: small;
+    }
     .search-form {
-         position: right;
+         position: center;
          top: 90px;
          right: 240px;
 
