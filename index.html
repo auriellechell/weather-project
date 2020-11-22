@@ -18,20 +18,20 @@
 <body>
     <div class="container">
         <br />
-        <form class="search-form" id="search-form">
-            <input type="text" placeholder="Enter City" id="city-input" />
-            <span class="submit-b"><input type="submit" value="Search" /></form></span>
-        </form>
-        <div class="d" id="date">👁‍🗨</div>
         <h1>Weekly Forcast in<span id="city">👁‍🗨</span></h1>
+       <section><form class="search-form" id="search-form">
+        <input type="text" placeholder="Enter City" id="city-input" />
+        <span class="submit-b"><input type="submit" value="Search" /></form></span>
+    </form>
+    <div class="d" id="date">👁‍🗨</div></section>
         <section class="main" id="main-weather">
             <div class="card text-center" style="width: 18rem">
                 <div class="card-body">
                     <h5 class="card-title" id="main-day">👁‍🗨</h5>
                     <p class="card-text">
                     </br>
-                        High of <span class="HighMainTempature" id="high-main-tempature">👁‍🗨</span><small>👁‍🗨</small><br />
-                        Low of <span class="LowMaintempature" >👁‍🗨</span><small>👁‍🗨</small>
+                        High of <span class="HighMainTempature" id="high-main-tempature">👁‍🗨</span><span class="temp-emoji">👁‍🗨</span><br />
+                        Low of <span class="LowMaintempature" >👁‍🗨</span><span class="temp-emoji">👁‍🗨</span>
                     </p>
                 </div>
                 <span>
@@ -48,8 +48,8 @@
         <span>
             <section class="change-b" id="j-change-b">
                 <button id="current-l-b">Current Location</button>
-                <button id="fahrenheit">Change to <small>℉</small></button>
-                <button id="celcius">Change to <small>℃</small></button>
+                <button id="fahrenheit">Change to <span class="temp-emoji">℉</span></button>
+                <button id="celcius">Change to <span class="temp-emoji">℃</span></button>
         
             </section>
         </span>
