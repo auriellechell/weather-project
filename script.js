@@ -1,29 +1,42 @@
-let now = new Date();
-let d = document.querySelector("d");
-let date = now.getDate();
-let hours = now.getHours();
-let minutes = now.getMinutes();
-let year = now.getFullYear();
-let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-let day = days[now.getDay()];
-let months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec"
-];
-let month = months[now.getMonth()];
-d.innerHTML = `${day} ${month} ${date} ${year}, ${hour}:${minutes}`;
 
- 
+
+function formatDate(date) {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+
+  let currentYear = date.getFullYear();
+  let currentDay = days[date.getDay()];
+  let currentMonth = months[date.getMonth()];
+  let currentDate = date.getDate();
+
+  let formattedDate = `${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}`;
+
+  return formattedDate;
+}
+
+
 
 
 //days of week array//
