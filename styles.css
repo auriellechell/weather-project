@@ -5,6 +5,7 @@ body {
     }
 
     form {
+        
        
     }
 
@@ -14,6 +15,13 @@ body {
         font-size: 60px;
         text-align: center;
     }
+
+    .info {
+        text-align: center;
+
+    }
+
+    
     .temp-emoji {
         font-size: small;
     }
