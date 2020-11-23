@@ -37,9 +37,11 @@ body {
 
 
     }
-    .c-date{
-        position: top right;
-    }
+    .date {
+        list-style: none;
+        margin:0 auto;
+           }
+    
 
     .main {
         position: center;
