@@ -7,9 +7,10 @@ let minutes=currentTime.getMinutes();
 if (minutes<10){
     minutes=`0${minutes}`;
 }
-days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
+let dayindext=date.getday();
+let days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
 let day =days[dayindext];
-return`${days[dayindext]} ${hours}:${minutes}`;
+return`${day} ${hours}:${minutes}`;
 }
  let dateElement=document.querySelector("#date");
  let currentTime= new Date();
