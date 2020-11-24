@@ -1,25 +1,12 @@
-function formatDate(date){
-let hours= currentTime.getHours();
-if (hours <10){
-    hours=`0${hours}`;
-}
-let minutes=currentTime.getMinutes();
-if (minutes<10){
-    minutes=`0${minutes}`;
-}
-let dayindext=date.getday();
-let days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
-let day =days[dayindext];
-return`${day} ${hours}:${minutes}`;
-}
- let dateElement=document.querySelector("#date");
- let currentTime= new Date();
-dateElement.innerHTML= formatDate(currentTime);
+function search(event){
+    event.preventDefault();
+      
+    let apiKey = "a67bcee8bc3862ba2da27468ca9d60a2";
+    let units = "metric";
+    let city =document.querySelector("#city-input").value;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+    axios.get(apiUrl).then(showTempature);
+  }
 
 
-//api info//
-let apiKey = "a67bcee8bc3862ba2da27468ca9d60a2";
-let units = "metric";
 
-let latitude= position.coords.latitude;
-let longitude= position.coords.longitude;
