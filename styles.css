@@ -45,16 +45,23 @@ body {
 
 
     }
-    .date {
+    .cd {
         list-style: none;
         margin:0 auto;
            }
     
 
     .main {
-        position: center;
+         margin: 0 auto;
+        
+}
+    
         
     }
+.card text-center{
+
+}
+
     .card-body{
          background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
     }
