@@ -1,15 +1,19 @@
-let dateElement=document.querySelector("#date");
-let currentTime= new Date();
+function formatDate(date){
 let hours= currentTime.getHours();
+if (hours <10){
+    hours=`0${hours}`;
+}
 let minutes=currentTime.getMinutes();
-console.log(hours,minutes);
-
-let dayIndex=currentTime.getDay();
-let days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
-let day=days[date.getDay()];
-
-
-dateElement.innerHTML= `${hours}:${minutes};
+if (minutes<10){
+    minutes=`0${minutes}`;
+}
+days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
+let day =days[dayindext];
+return`${days[dayindext]} ${hours}:${minutes}`;
+}
+ let dateElement=document.querySelector("#date");
+ let currentTime= new Date();
+dateElement.innerHTML= formatDate(currentTime);
 
 
 //api info//
